@@ -6,6 +6,41 @@
     border: none;
 }
 
+/* Brown/Coffee color scheme for headings - readable in both light and dark modes */
+:root {
+    --heading-color-light: #6F4E37; /* Coffee brown - darker for light mode */
+    --heading-color-dark: #D2B48C; /* Tan/coffee - lighter for dark mode */
+    --heading-color: #8B6F47; /* Medium coffee brown - works in both modes */
+}
+
+/* Global heading styles with brown/coffee colors */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+/* Light mode - use darker brown */
+@media (prefers-color-scheme: light) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #6F4E37; /* Dark coffee brown */
+    }
+}
+
+/* Dark mode - use lighter brown/tan */
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #D2B48C; /* Light tan/coffee */
+    }
+}
+
+/* Fallback for browsers that don't support prefers-color-scheme */
+h1 { color: #8B6F47; }
+h2 { color: #8B6F47; }
+h3 { color: #8B6F47; }
+h4 { color: #8B6F47; }
+h5 { color: #8B6F47; }
+h6 { color: #8B6F47; }
+
 button {
     padding: 10px 15px;
     font-size: 14px;

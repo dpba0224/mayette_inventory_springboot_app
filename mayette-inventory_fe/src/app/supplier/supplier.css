@@ -6,8 +6,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    color: #17a2b8;
     margin-left: 10px;
+}
+
+.supplier-header h1 {
+    color: #8B6F47; /* Coffee brown */
 }
 
 .supplier-header button {
