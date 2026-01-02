@@ -31,6 +31,7 @@ public class ProductServiceImpl implements ProductService {
     private final CategoryRepository categoryRepository;
 
     private static final String IMAGE_DIRECTORY = System.getProperty("user.dir") + "/product-image/";
+    private static final String IMAGE_DIRECTORY_FRONTEND = "C:\\Users\\user\\Desktop\\David Polo B. Abrugena\\Self-study\\Spring Boot\\MayetteInventory\\mayette-inventory_fe\\public\\products";
 
     @Override
     public Response saveProduct(ProductDTO productDTO, MultipartFile imageFile) {
@@ -48,7 +49,7 @@ public class ProductServiceImpl implements ProductService {
                 .build();
 
         if (imageFile != null){
-            String imagePath = saveImage(imageFile);
+            String imagePath = saveImageToFrontendPublicFolder(imageFile);
             productToSave.setImageUrl(imagePath);
         }
 
@@ -67,7 +68,7 @@ public class ProductServiceImpl implements ProductService {
 
         //check if image is associated with the update request
         if (imageFile != null && !imageFile.isEmpty()){
-            String imagePath = saveImage(imageFile);
+            String imagePath = saveImageToFrontendPublicFolder(imageFile);
             existingProduct.setImageUrl(imagePath);
         }
 
@@ -147,6 +148,36 @@ public class ProductServiceImpl implements ProductService {
                 .status(200)
                 .message("Product successfully deleted")
                 .build();
+    }
+
+    private String saveImageToFrontendPublicFolder(MultipartFile imageFile){
+        //validate image check
+        if (!imageFile.getContentType().startsWith("image/")){
+            throw new IllegalArgumentException("Only image files are allowed");
+        }
+        //create the directory to store images if it doesn't exist
+        File directory = new File(IMAGE_DIRECTORY_FRONTEND);
+
+        if (!directory.exists()){
+            directory.mkdir();
+            log.info("Directory was created");
+        }
+
+        //generate unique file name for the image
+        String uniqueFileName = UUID.randomUUID() + "_" + imageFile.getOriginalFilename();
+
+        //get the absolute path of the image
+        String imagePath = IMAGE_DIRECTORY_FRONTEND + File.separator + uniqueFileName;
+
+        try {
+            File desctinationFile = new File(imagePath);
+            imageFile.transferTo(desctinationFile); //we are transferring (writing to this folder)
+
+        }catch (Exception e){
+            throw new IllegalArgumentException("Error occurred while saving image" + e.getMessage());
+        }
+
+        return "/products/" + uniqueFileName;
     }
 
     private String saveImage(MultipartFile imageFile){

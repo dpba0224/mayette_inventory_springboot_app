@@ -12,7 +12,6 @@ import { Sell } from './sell/sell';
 import { Transaction } from './transaction/transaction';
 import { TransactionDetails } from './transaction-details/transaction-details';
 import { Profile } from './profile/profile';
-import { Dashboard } from './dashboard/dashboard';
 
 
 export const routes: Routes = [
@@ -30,6 +29,5 @@ export const routes: Routes = [
     { path: 'transaction', component: Transaction, canActivate:[Guard] },
     { path: 'transaction/:transactionId', component: TransactionDetails, canActivate:[Guard] },
     { path: 'profile', component: Profile, canActivate:[Guard] },
-    { path: 'dashboard', component: Dashboard, canActivate:[Guard] },
     { path: "", redirectTo: "/login", pathMatch: 'full' },
 ];
