@@ -4,6 +4,7 @@
 
 h1 {
     color: #8B6F47; /* Coffee brown */
+    font-weight: 800;
 }
 
 .transactions-header {
@@ -19,7 +20,7 @@ h1 {
 }
 
 .transaction-search input {
-    border: 1px solid #17a2b8;
+    border: 1px solid #65350f;
     padding: 10px;
     border-radius: 4px;
 }
@@ -32,13 +33,13 @@ h1 {
 
 .transactions-table th,
 .transactions-table td {
-    border: 1px solid #ddd;
+    border: 1px solid #65350f;
     padding: 12px;
-    text-align: left;
+    text-align: center;
 }
 
 .transactions-table th {
-    background-color: #f4f4f4;
+    background-color: #9a7b4f;
     font-weight: bold;
 }
 

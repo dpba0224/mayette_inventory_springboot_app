@@ -186,7 +186,7 @@ public class TransactionServiceImpl implements TransactionService {
 
         TransactionDTO transactionDTO = modelMapper.map(transaction, TransactionDTO.class);
 
-        transactionDTO.getUser().setTransactions(null); //removing the user trnasaction list
+        transactionDTO.getUser().setTransactions(null); //removing the user transaction list
 
         return Response.builder()
                 .status(200)

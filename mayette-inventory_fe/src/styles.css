@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neucha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: none;
 }
 
@@ -45,7 +47,7 @@ button {
     padding: 10px 15px;
     font-size: 14px;
     background-color: #c250c2;
-    background-color: #17a2b8;
+    background-color: #481f01;
     color: #ffffff;
     font-weight: 800;
     border-radius: 5px;

@@ -93,7 +93,7 @@ export class Category implements OnInit {
     this.categoryName = category.name
   }
 
-  //Delete a caetgory
+  //Delete a category
   handleDeleteCategory(caetgoryId: string):void{
     if (window.confirm("Are you sure you want to delete this categoy?")) {
       this.apiService.deleteCategory(caetgoryId).subscribe({

@@ -47,14 +47,14 @@ export class Supplier implements OnInit{
     this.router.navigate([`/edit-supplier/${supplierId}`]);
   }
 
-  //Delete a caetgory
+  //Delete a supplier
   handleDeleteSupplier(supplierId: string):void{
     if (window.confirm("Are you sure you want to delete this supplier?")) {
       this.apiService.deleteSupplier(supplierId).subscribe({
         next:(res:any) =>{
           if (res.status === 200) {
             this.showMessage("Supplier deleted successfully")
-            this.getSuppliers(); //reload the category
+            this.getSuppliers(); //reload the suppliers
           }
         },
         error:(error) =>{

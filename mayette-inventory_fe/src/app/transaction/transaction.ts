@@ -51,19 +51,19 @@ export class Transaction {
     });
   }
 
-  //HANDLE SERCH
+  //HANDLE SEARCH
   handleSearch():void{
     this.currentPage = 1;
     this.valueToSearch = this.searchInput;
     this.loadTransactions()
   }
 
-  //NAVIGATE TGO TRANSACTIONS DETAILS PAGE
+  //NAVIGATE TO TRANSACTIONS DETAILS PAGE
   navigateTOTransactionsDetailsPage(transactionId: string):void{
     this.router.navigate([`/transaction/${transactionId}`])
   }
 
-    //HANDLE PAGE CHANGRTE. NAVIGATR TO NEXT< PREVIOUS OR SPECIFIC PAGE CHANGE
+    //HANDLE PAGE CHANGE. NAVIGATE TO NEXT, PREVIOUS OR SPECIFIC PAGE CHANGE
     onPageChange(page: number): void {
       this.currentPage = page;
       this.loadTransactions();
