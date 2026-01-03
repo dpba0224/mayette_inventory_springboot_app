@@ -5,15 +5,16 @@
     margin: 0 auto;
     /* Center the form on the page */
     margin-top: 3rem;
-    box-shadow: 0 1px 1px #008080;
+    box-shadow: 0 1px 1px #5e2c04;
 }
 
 .supplier-form-page h1 {
     font-size: 2rem;
     font-weight: bold;
     color: #8B6F47; /* Coffee brown */
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .supplier-form-page .form-group {
@@ -24,8 +25,10 @@
     display: block;
     font-size: 1rem;
     font-weight: bold;
-    color: #2F4F4F;
+    color: #5e2c04;
     margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .supplier-form-page .form-group input {
@@ -39,13 +42,13 @@
 }
 
 .supplier-form-page .form-group input:focus {
-    border-color: #008080;
+    border-color: #5e2c04;
     outline: none;
 }
 
 .supplier-form-page button[type="submit"] {
     padding: 13px 20px;
-    background-color: #008080;
+    background-color: #5e2c04;
     color: white;
     border: none;
     border-radius: 5px;
@@ -57,5 +60,5 @@
 }
 
 .supplier-form-page button[type="submit"]:hover {
-    background-color: #2F4F4F;
+    background-color: #3c280d;
 }

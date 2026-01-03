@@ -9,21 +9,24 @@
 
 .purchase-form-page h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #8B6F47; /* Coffee brown */
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 .purchase-form-page .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .purchase-form-page .form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #2F4F4F;
+    color: #5e2c04;
     margin: 10px;
-    font-weight: 550;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .purchase-form-page .form-group input,

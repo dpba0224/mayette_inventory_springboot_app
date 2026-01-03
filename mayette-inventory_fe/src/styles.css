@@ -46,7 +46,6 @@ h6 { color: #8B6F47; }
 button {
     padding: 10px 15px;
     font-size: 14px;
-    background-color: #c250c2;
     background-color: #481f01;
     color: #ffffff;
     font-weight: 800;
@@ -56,7 +55,7 @@ button {
 }
 
 button:hover {
-    background-color: #2F4F4F;
+    background-color: #231709;
 }
 
 .message {

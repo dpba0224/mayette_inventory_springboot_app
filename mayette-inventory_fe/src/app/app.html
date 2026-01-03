@@ -9,9 +9,9 @@
       <li *ngIf="isAuth()"><a routerLink="/purchase">Purchase</a></li>
       <li *ngIf="isAuth()"><a routerLink="/sell">Sell</a></li>
       <li *ngIf="isAuth()"><a routerLink="/profile">Profile</a></li>
-      <li *ngIf="!isAuth()"><a routerLink="/login">Login</a></li>
+      <li *ngIf="!isAuth()"><a routerLink="/login">Log in</a></li>
       <li *ngIf="!isAuth()"><a routerLink="/register">Register</a></li>
-      <li *ngIf="isAuth()"><a (click)="logOut()">Logout</a></li>
+      <li *ngIf="isAuth()"><a (click)="logOut()">Log out</a></li>
     </ul>
   </div>
 

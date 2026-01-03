@@ -1,15 +1,15 @@
 <div class="auth-container">
-    <h2>Register</h2>
+    <h2>REGISTER</h2>
     <p *ngIf="message" class="message">{{ message }}</p>
 
     <form (ngSubmit)="handleSubmit()">
-        <input type="text" placeholder="Name ..." [(ngModel)]="formData.name" name="name" required />
-        <input type="email" placeholder="Email ..." [(ngModel)]="formData.email" name="email" required />
-        <input type="password" placeholder="Password ..." [(ngModel)]="formData.password" name="password" required />
-        <input type="number" placeholder="Phone Number ..." [(ngModel)]="formData.phoneNumber" name="phoneNumber"
+        <input type="text" placeholder="Full Name" [(ngModel)]="formData.name" name="name" required />
+        <input type="email" placeholder="E-mail Address" [(ngModel)]="formData.email" name="email" required />
+        <input type="password" placeholder="Password" [(ngModel)]="formData.password" name="password" required />
+        <input type="number" placeholder="Phone Number" [(ngModel)]="formData.phoneNumber" name="phoneNumber"
             required />
 
         <button type="submit">Register</button>
     </form>
-    <p>Already have an account?<a routerLink="/login" routerLinkActive="router-link-active">Login</a></p>
+    <p>Already have an account? <a routerLink="/login" routerLinkActive="router-link-active">Log in</a></p>
 </div>

@@ -1,9 +1,9 @@
 .product-form-page {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fefefe;
-    box-shadow: 0 1px 1px #17a2b8;
+    background-color: #F4F0EC;
+    box-shadow: 0 1px 1px #5e2c04;
     border-radius: 10px;
 }
 
@@ -29,8 +29,10 @@
 
 .product-form-page .form-group label {
     font-size: 1rem;
-    color: #2F4F4F;
+    color: #5e2c04;
     margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .product-form-page .form-group input,
@@ -48,7 +50,7 @@
 .product-form-page .form-group input:focus,
 .product-form-page .form-group select:focus,
 .product-form-page .form-group textarea:focus {
-    border-color: #008080;
+    border-color: #5e2c04;
     outline: none;
 }
 
@@ -59,7 +61,7 @@
 
 .product-form-page button {
     padding: 12px 20px;
-    background-color: #17a2b8;
+    background-color: #5e2c04;
     color: white;
     border: none;
     border-radius: 5px;
@@ -70,7 +72,7 @@
 }
 
 .product-form-page button:hover {
-    background-color: #2F4F4F;
+    background-color: #3c280d;
 }
 
 .product-form-page .image-preview {

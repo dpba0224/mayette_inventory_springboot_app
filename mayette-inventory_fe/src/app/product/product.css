@@ -1,6 +1,6 @@
 .product-page {
     padding: 20px;
-    background-color: #f3f4f6;
+    background-color: #F4F0EC;
 }
 
 .product-header {
@@ -12,7 +12,7 @@
 
 .product-header h1 {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 800;
     color: #8B6F47; /* Coffee brown */
 }
 
@@ -27,7 +27,7 @@
 
 .add-product-btn {
     padding: 13px 20px;
-    background-color: #17a2b8;
+    background-color: #5e2c04;
     color: white;
     border: none;
     border-radius: 5px;
@@ -37,12 +37,12 @@
 }
 
 .add-product-btn:hover {
-    background-color: #2F4F4F;
+    background-color: #231709;
 }
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* Display 7 items per row */
     gap: 15px;
     /* Increased gap for better spacing between items */
@@ -54,6 +54,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #231709;
 
 }
 
@@ -69,19 +70,16 @@
 .product-info .name {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: #231709;
     margin-bottom: 10px;
-}
-
-.product-info .name {
-    color: #2F4F4F;
+    text-transform: uppercase;
 }
 
 .product-info .sku,
 .product-info .price,
 .product-info .quantity {
 
-    color: #777;
+    color: #231709;
     /* color: #014646; */
     font-size: 0.9rem;
     margin-bottom: 5px;
@@ -104,26 +102,26 @@
 }
 
 .edit-btn {
-    background-color: #17a2b8;
+    background-color: #5e2c04;
     color: white;
 }
 
 .edit-btn:hover {
-    background-color: #2F4F4F;
+    background-color: #3c280d;
 }
 
 .delete-btn {
-    background-color: #dc3545;
+    background-color: #3c280d;
     color: white;
 }
 
 .delete-btn:hover {
-    background-color: #a5202e;
+    background-color: #231709;
 }
 
 .loading {
     font-size: 1.2rem;
-    color: #666;
+    color: #3c280d;
     text-align: center;
     margin-top: 50px;
 }

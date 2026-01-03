@@ -11,11 +11,12 @@
 
 .supplier-header h1 {
     color: #8B6F47; /* Coffee brown */
+    font-weight: 800;
 }
 
 .supplier-header button {
     padding: 12px 12px;
-    background-color: #17a2b8;
+    background-color: #65350f;
     font-size: 16px;
     color: white;
     border: none;
@@ -41,7 +42,7 @@
     background-color: #f9f9f9;
     border-bottom: 1px solid #eee;
     border-radius: 10px;
-    color: #2F4F4F;
+    color: #231709;
     font-weight: 550;
 }
 
@@ -52,7 +53,7 @@
 .supplier-actions button {
 
     margin-left: 10px;
-    background-color: #17a2b8;
+    background-color: #65350f;
     font-size: 16px;
     padding: 10px 20px;
     color: white;
@@ -61,5 +62,5 @@
 }
 
 .supplier-actions button:last-child {
-    background-color: #dc3545;
+    background-color: #3c280d;
 }
